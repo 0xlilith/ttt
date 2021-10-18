@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav { 
+    height: 92px;
+    display: flex;
+    color: black;
+    font-size: 40px;
+    padding: 0 12px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;  
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.Container {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.gameInfo h1 {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 20px;
+    padding: 20px 34px;
+}
+
+.Game {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive; 
+}
+
+.box:hover{
+    background-color: rgba(228, 171, 247, 0.543);
+}
+
+.imgbox img {
+    display: none;
+}
+
+.gameInfo div {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 20px;
+    padding: 0 34px;
+}
+
+.gameInfo div reset {  
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer; 
+    font-size: 12px;
+    padding: 8px 16px;
+}
+
+.br-0 {
+    border-right: 0;
+}
+.bl-0 {
+    border-left: 0;
+}
+.bt-0 {
+    border-top: 0;
+}
+.bb-0 {
+    border-bottom: 0;
+}
