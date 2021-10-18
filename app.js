@@ -1,4 +1,15 @@
 let music = new Audio("sauce/cozy.mp3")
+if (typeof music.loop == 'boolean')
+{
+    music.loop = true;
+}
+else
+{
+    music.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
 let click = new Audio("sauce/click.wav")
 let gameover = false;
 let turn = 'X';
@@ -29,7 +40,7 @@ const checkWin = () => {
     })
 }
 
-// music.play();
+music.play();
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxtext');
